@@ -1,4 +1,4 @@
-export const MetaData = {
+export const metaDataLinks = {
   faviconLink32x32:
     "https://github.com/zobaidulkazi64/zobaidulkazi/blob/main/public/favicon-32x32.png?raw=true",
   faviconLink16x16:
@@ -10,3 +10,17 @@ export const MetaData = {
   androidChromeLink512x512:
     "https://github.com/zobaidulkazi64/zobaidulkazi/blob/main/public/android-chrome-512x512.png?raw=true",
 };
+
+export const metaDataTitle = {
+  title: "Zobaidul Kazi",
+  description: "The React Framework for the Web",
+};
+
+export const MetaDataSocial = {
+  twitter: "https://twitter.com/zobaidulkazi",
+  facebook: "https://facebook.com/zobaidulkazi64",
+  linkedin: "https://linkedin.com/in/zobaidulkazi",
+  instagram: "https://instagram.com/zobaidulkazi",
+  github: "https://github.com/zobaidulkazi64",
+};
+

@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MetaData } from "@/config/MetaData";
+import { metaDataLinks } from "@/config/MetaData";
+import { keywords } from "@/config/Keywords";
+import { metaDataTitle } from "@/config/MetaData";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kazi Byte",
-  description: "The React Framework for the Web",
+  title: metaDataTitle.title,
+  description: metaDataTitle.description,
+  icons: {},
 };
 
 export default function RootLayout({
@@ -18,31 +21,37 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={MetaData.faviconLinkAppleTouchIcon}
+          href={metaDataLinks.faviconLinkAppleTouchIcon}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={MetaData.faviconLink32x32}
+          href={metaDataLinks.faviconLink32x32}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={MetaData.faviconLink16x16}
+          href={metaDataLinks.faviconLink16x16}
         />
-        <link rel="manifest" href="/public/site.webmanifest"></link>
+        <link rel="manifest" href="/site.webmanifest"></link>
         <link
           rel="mask-icon"
-          href={MetaData.androidChromeLink512x512}
+          href={metaDataLinks.androidChromeLink512x512}
           color="#5bbad5"
         />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
+        {/* keywords */}
+        <meta name="keywords" content={keywords.join(", ")} />
+        {/* social links */}
+
+        <meta name="twitter:card" content="summary_large_image" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
