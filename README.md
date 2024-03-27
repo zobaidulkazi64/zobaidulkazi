@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Zobaidul Kazi
 
-## Getting Started
+### About
 
-First, run the development server:
+The React Framework for the Web
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Keywords
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+React, ReactJS, Next, NextJS, Web, Web Development, Web Framework, Web Frameworks, Web Frameworks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Links
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [GitHub](https://github.com/zobaidulkazi64)
+- [LinkedIn](https://linkedin.com/in/zobaidulkazi)
+- [Twitter](https://twitter.com/zobaidulkazi)
+- [Facebook](https://facebook.com/zobaidulkazi64)
+- [Instagram](https://instagram.com/zobaidulkazi)
+- [Email](mailto:0y8W5@example.com)
 
-## Learn More
+### Languages
 
-To learn more about Next.js, take a look at the following resources:
+- [English](https://zobaidulkazi64.github.io/)
+- [हिंदी](https://zobaidulkazi64-hindi.netlify.app/)
+- [日本語](https://zobaidulkazi64.netlify.app/)
+- [中文](https://zobaidulkazi64-zh.netlify.app/)
+- [Portugueês](https://zobaidulkazi64-portugues.netlify.app/)
+- [Русский](https://zobaidulkazi64-russian.netlify.app/)
+- [Español](https://zobaidulkazi64-spanish.netlify.app/)
+- [Portugues](https://zobaidulkazi64-portugues.netlify.app/)
+- [Français](https://zobaidulkazi64-french.netlify.app/)
+- [Nederlands](https://zobaidulkazi64-nederlands.netlify.app/)
+- [Portugues](https://zobaidulkazi64-portugues.netlify.app/)
+- [Espanol](https://zobaidulkazi64-spanish.netlify.app/)
+- [Bangla](https://zobaidulkazi64-bangla.netlify.app/)
+- [Türkçe](https://zobaidulkazi64-turkish.netlify.app/)
+- [Tievendi](https://zobaidulkazi64-tievendi.netlify.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [zobaidulkazi64](https://github.com/zobaidulkazi64)
+- [zobaidulkazi64-hindi](https://github.com/zobaidulkazi64-hindi)
+- [zobaidulkazi64-zh](https://github.com/zobaidulkazi64-zh)
+- [zobaidulkazi64-portugues](https://github.com/zobaidulkazi64-portugues)
+- [zobaidulkazi64-russian](https://github.com/zobaidulkazi64-russian)
+- [zobaidulkazi64-spanish](https://github.com/zobaidulkazi64-spanish)
+- [zobaidulkazi64-portugues](https://github.com/zobaidulkazi64-portugues)
+- [zobaidulkazi64-french](https://github.com/zobaidulkazi64-french)
+- [zobaidulkazi64-nederlands](https://github.com/zobaidulkazi64-nederlands)
+- [zobaidulkazi64-portugues](https://github.com/zobaidulkazi64-portugues)
+- [zobaidulkazi64-spanish](https://github.com/zobaidulkazi64-spanish)
+- [zobaidulkazi64-bangla](https://github.com/zobaidulkazi64-bangla)
+- [zobaidulkazi64-turkish](https://github.com/zobaidulkazi64-turkish)
+- [zobaidulkazi64-tievendi](https://github.com/zobaidulkazi64-tievendi)
