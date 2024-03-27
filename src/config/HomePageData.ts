@@ -1,4 +1,4 @@
 export const HomePageData = {
-  title: "Next.js 13.4.1",
+  title: "Zobaidul Kazi",
   description: "The React Framework for the Web",
 };

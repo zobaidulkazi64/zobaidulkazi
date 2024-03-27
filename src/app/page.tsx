@@ -1,11 +1,9 @@
-import Tabs from "@/components/Tabs";
-import Welcome from "@/components/Welcome";
-import React from "react";
+import HomeTabs from "@/components/homeTabs/HomeTabs";
 
 function Home() {
   return (
     <div>
-      <Tabs />
+      <HomeTabs />
     </div>
   );
 }
