@@ -2,6 +2,10 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import StatisticsComponent from "./statistics/Statistics";
+import ServicesComponent from "./services/Services";
+import FAQComponent from "./FAQ/FAQ";
+import ContactComponent from "./contact/Contact";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("stats");
@@ -32,8 +36,8 @@ const Tabs: React.FC = () => {
             {activeTab === "new" && "New Section"}
           </button>
           <Link href="/">
-            <h1 className="inline-block text-sm w-full py-3 px-4 text-left">
-              Kazi Byte
+            <h1 className="inline-block w-full py-3 text-4xl font-bold text-fuchsia-500 px-4 text-left">
+              ZK
             </h1>
           </Link>
         </div>
@@ -61,7 +65,7 @@ const Tabs: React.FC = () => {
                 activeTab === "faq" ? "bg-gray-100" : ""
               }`}
             >
-              FAQ
+              abc
             </button>
             <button
               onMouseDown={() => handleTabClick("contact")}
@@ -77,7 +81,7 @@ const Tabs: React.FC = () => {
                 activeTab === "new" ? "bg-gray-100" : ""
               }`}
             >
-              New Section
+              FAQ
             </button>
           </div>
         )}
@@ -141,7 +145,7 @@ const Tabs: React.FC = () => {
               } focus:outline-none`}
               onClick={() => handleTabClick("faq")}
             >
-              FAQ
+              aBC
             </button>
           </li>
           <li className="w-full">
@@ -159,7 +163,7 @@ const Tabs: React.FC = () => {
               } focus:outline-none`}
               onClick={() => handleTabClick("contact")}
             >
-              Contact
+              QQW
             </button>
           </li>
           <li className="w-full">
@@ -177,7 +181,7 @@ const Tabs: React.FC = () => {
               } focus:outline-none`}
               onClick={() => handleTabClick("new")}
             >
-              New Section
+              Contact
             </button>
           </li>
         </ul>
@@ -195,8 +199,7 @@ const Tabs: React.FC = () => {
           role="tabpanel"
           aria-labelledby="stats-tab"
         >
-          <h2 className="text-2xl font-semibold mb-4">Statistics Content</h2>
-          <p>This is where your statistics content goes.</p>
+          <StatisticsComponent />
         </div>
         <div
           className={`p-4 h-screen bg-white rounded-lg md:p-8  ${
@@ -206,8 +209,7 @@ const Tabs: React.FC = () => {
           role="tabpanel"
           aria-labelledby="about-tab"
         >
-          <h2 className="text-2xl font-semibold mb-4">Services Content</h2>
-          <p>This is where your services content goes.</p>
+          <ServicesComponent />
         </div>
         <div
           className={`p-4 h-screen bg-white rounded-lg  ${
@@ -217,8 +219,7 @@ const Tabs: React.FC = () => {
           role="tabpanel"
           aria-labelledby="faq-tab"
         >
-          <h2 className="text-2xl font-semibold mb-4">FAQ Content</h2>
-          <p>This is where your FAQ content goes.</p>
+          <FAQComponent />
         </div>
         <div
           className={`p-4 h-screen bg-white rounded-lg  ${
@@ -228,8 +229,7 @@ const Tabs: React.FC = () => {
           role="tabpanel"
           aria-labelledby="contact-tab"
         >
-          <h2 className="text-2xl font-semibold mb-4">Contact Content</h2>
-          <p>This is where your contact content goes.</p>
+          <ContactComponent />
         </div>
         <div
           className={`p-4 h-screen bg-white rounded-lg  ${
@@ -239,8 +239,7 @@ const Tabs: React.FC = () => {
           role="tabpanel"
           aria-labelledby="new-tab"
         >
-          <h2 className="text-2xl font-semibold mb-4">New Section Content</h2>
-          <p>This is where your new section content goes.</p>
+          <FAQComponent />
         </div>
       </div>
     </div>

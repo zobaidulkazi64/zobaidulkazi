@@ -1,4 +1,4 @@
-import HomeTabs from "@/components/homeTabs/HomeTabs";
+import HomeTabs from "@/components/HomeTabs";
 
 function Home() {
   return (
