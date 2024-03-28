@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import StatisticsComponent from "./statistics/Statistics";
+import AboutMeComponent from "./aboutMe/AboutMe";
 import ServicesComponent from "./services/Services";
 import FAQComponent from "./FAQ/FAQ";
 import ContactComponent from "./contact/Contact";
+import ProjectsComponent from "./project/Projects";
 
 const Tabs: React.FC = () => {
   const [activeTab, setActiveTab] = useState("stats");
@@ -31,7 +32,7 @@ const Tabs: React.FC = () => {
           >
             {activeTab === "stats" && "Statistics"}
             {activeTab === "about" && "Services"}
-            {activeTab === "faq" && "FAQ"}
+            {activeTab === "project" && "Projects"}
             {activeTab === "contact" && "Contact"}
             {activeTab === "new" && "New Section"}
           </button>
@@ -49,7 +50,7 @@ const Tabs: React.FC = () => {
                 activeTab === "stats" ? "bg-gray-100" : ""
               }`}
             >
-              Statistics
+              About Me
             </button>
             <button
               onClick={() => handleTabClick("about")}
@@ -57,15 +58,15 @@ const Tabs: React.FC = () => {
                 activeTab === "about" ? "bg-gray-100" : ""
               }`}
             >
-              Services
+              Projects
             </button>
             <button
-              onClick={() => handleTabClick("faq")}
+              onClick={() => handleTabClick("project")}
               className={`block w-full py-3 px-4 text-left ${
-                activeTab === "faq" ? "bg-gray-100" : ""
+                activeTab === "project" ? "bg-gray-100" : ""
               }`}
             >
-              abc
+              Services
             </button>
             <button
               onMouseDown={() => handleTabClick("contact")}
@@ -109,7 +110,7 @@ const Tabs: React.FC = () => {
               } focus:outline-none`}
               onClick={() => handleTabClick("stats")}
             >
-              Statistics
+              About Me
             </button>
           </li>
           <li className="w-full">
@@ -127,25 +128,25 @@ const Tabs: React.FC = () => {
               } focus:outline-none `}
               onClick={() => handleTabClick("about")}
             >
-              Services
+              Projects
             </button>
           </li>
           <li className="w-full">
             <button
-              id="faq-tab"
-              data-tabs-target="#faq"
+              id="project-tab"
+              data-tabs-target="#project"
               type="button"
               role="tab"
-              aria-controls="faq"
-              aria-selected={activeTab === "faq"}
+              aria-controls="project"
+              aria-selected={activeTab === "project"}
               className={`inline-block w-full p-4 rounded-se-lg ${
-                activeTab === "faq"
+                activeTab === "project"
                   ? "bg-gray-50 hover:bg-gray-100"
                   : "bg-gray-50 "
               } focus:outline-none`}
-              onClick={() => handleTabClick("faq")}
+              onClick={() => handleTabClick("project")}
             >
-              aBC
+              Services
             </button>
           </li>
           <li className="w-full">
@@ -163,7 +164,7 @@ const Tabs: React.FC = () => {
               } focus:outline-none`}
               onClick={() => handleTabClick("contact")}
             >
-              QQW
+              Contact
             </button>
           </li>
           <li className="w-full">
@@ -181,7 +182,7 @@ const Tabs: React.FC = () => {
               } focus:outline-none`}
               onClick={() => handleTabClick("new")}
             >
-              Contact
+              FAQ
             </button>
           </li>
         </ul>
@@ -192,37 +193,37 @@ const Tabs: React.FC = () => {
       <div className="border-t border-gray-200 " id="fullWidthTabContent">
         {/* Content for each tab */}
         <div
-          className={`p-4 h-screen bg-white rounded-lg md:p-8 ${
+          className={`p-4 bg-white rounded-lg md:p-8 ${
             activeTab === "stats" ? "" : "hidden"
           }`}
           id="stats"
           role="tabpanel"
           aria-labelledby="stats-tab"
         >
-          <StatisticsComponent />
+          <AboutMeComponent />
         </div>
         <div
-          className={`p-4 h-screen bg-white rounded-lg md:p-8  ${
+          className={`p-4 bg-white rounded-lg md:p-8  ${
             activeTab === "about" ? "" : "hidden"
           }`}
           id="about"
           role="tabpanel"
           aria-labelledby="about-tab"
         >
+          <ProjectsComponent />
+        </div>
+        <div
+          className={`p-4 bg-white rounded-lg  ${
+            activeTab === "project" ? "" : "hidden"
+          }`}
+          id="project"
+          role="tabpanel"
+          aria-labelledby="project-tab"
+        >
           <ServicesComponent />
         </div>
         <div
-          className={`p-4 h-screen bg-white rounded-lg  ${
-            activeTab === "faq" ? "" : "hidden"
-          }`}
-          id="faq"
-          role="tabpanel"
-          aria-labelledby="faq-tab"
-        >
-          <FAQComponent />
-        </div>
-        <div
-          className={`p-4 h-screen bg-white rounded-lg  ${
+          className={`p-4 bg-white rounded-lg  ${
             activeTab === "contact" ? "" : "hidden"
           }`}
           id="contact"
@@ -232,7 +233,7 @@ const Tabs: React.FC = () => {
           <ContactComponent />
         </div>
         <div
-          className={`p-4 h-screen bg-white rounded-lg  ${
+          className={`p-4 bg-white rounded-lg  ${
             activeTab === "new" ? "" : "hidden"
           }`}
           id="new"

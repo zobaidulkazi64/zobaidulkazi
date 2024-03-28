@@ -4,6 +4,7 @@ import "./globals.css";
 import { metaDataLinks } from "@/config/MetaData";
 import { keywords } from "@/config/Keywords";
 import { metaDataTitle } from "@/config/MetaData";
+import FooterComponent from "@/components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -53,7 +54,12 @@ export default function RootLayout({
 
         <meta name="twitter:card" content="summary_large_image" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>
+          <div>{children}</div>
+          <FooterComponent />
+        </div>
+      </body>
     </html>
   );
 }
