@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import HeroImages from "../../assets/images/zobaidulkazi.png";
 import ZKBG from "../../assets/images/zobaidulkazi-bg-1.svg";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -28,13 +29,13 @@ function Hero() {
                 </span>
                 <br className="block sm:hidden" />
                 Ask me on{" "}
-                <a
+                <Link
                   href="mailto:zobaidulkazi64.official@gmail.com"
                   title='Click to subscribe to the "Zobaidul Kazi" email list'
                   className="transition-all text-3xl duration-200 text-sky-500 hover:text-sky-600 hover:underline"
                 >
                   Email
-                </a>
+                </Link>
               </p>
             </div>
 
@@ -57,7 +58,6 @@ function Hero() {
             </div>
           </div>
         </div>
-        <hr className="border-b border-gray-200 bottom-5 " />
       </section>
     </div>
   );
