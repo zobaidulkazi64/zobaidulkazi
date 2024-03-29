@@ -2,27 +2,25 @@ import React from "react";
 import { SocialMediaIcons } from "../../config/SocialMediaIcons";
 import Image from "next/image";
 import Link from "next/link";
+import { HomeIcon } from "@/config/SocialMediaIcons";
 
 const Footer: React.FC = () => {
-  // Find the 'home' icon object
-  const homeIcon = SocialMediaIcons.find((item) => item.name === "home");
-
   return (
     <footer className="static py-6">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="flex flex-wrap items-center justify-center">
           <div className="mr-6">
-            <Link href={homeIcon?.link as unknown as string}>
+            <Link href={HomeIcon?.link as unknown as string}>
               <Image
                 width={30}
                 height={30}
-                src={homeIcon?.icon as unknown as string} // Type assertion here
+                src={HomeIcon?.icon as unknown as string} // Type assertion here
                 alt="Logo"
               />
             </Link>
           </div>
           <p className="text-gray-400">
-            zobaidulkazi | all rights reserved by{" "}
+            © All rights reserved by{" "}
             <Link href={"https://github.com/kazibyte"}>
               <span className="text-blue-500">@kazibyte</span>
             </Link>{" "}

@@ -2,7 +2,7 @@ import HomeTabs from "@/components/HomeTabs";
 
 function Home() {
   return (
-    <div>
+    <div className="min-h-screen">
       <HomeTabs />
     </div>
   );

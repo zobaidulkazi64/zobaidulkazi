@@ -3,7 +3,7 @@ import Hero from "../hero/Hero";
 
 function StatisticsComponent() {
   return (
-    <div>
+    <div className="min-h-screen">
       <Hero />
     </div>
   );

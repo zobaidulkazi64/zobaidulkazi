@@ -24,7 +24,6 @@ export const SocialMediaIcons = [
     icon: githubIcon,
     link: "https://github.com/zobaidulkazi64",
   },
-  { name: "home", icon: homeIcon, link: "/" },
   { name: "telegram", icon: telegramIcon, link: "https://telegram.org/" },
   {
     name: "whatsapp",
@@ -35,3 +34,9 @@ export const SocialMediaIcons = [
   { name: "calender", icon: calender, link: "https://calendar.google.com/" },
   { name: "gmail", icon: gmail, link: "https://mail.google.com/" },
 ];
+
+export const HomeIcon = {
+  name: "home",
+  icon: homeIcon,
+  link: "/",
+};
