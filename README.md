@@ -2,6 +2,10 @@
 
 https://zobaidulkazi.netlify.app/
 
+https://zobkazi.github.io/zobaidulkazi/
+
+https://zobaidulkazi.vercel.app/
+
 ### About
 
 As a full stack developer, I am passionate about creating web apps that are scalable and user-friendly. I am a quick learner and love to learn new technologies.
