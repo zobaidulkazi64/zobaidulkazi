@@ -1,9 +1,9 @@
-import HomeTabs from "@/components/HomeTabs";
+import Hero from "@/components/hero/Hero";
 
 function Home() {
   return (
-    <div className="min-h-screen">
-      <HomeTabs />
+    <div className="bg-gradient-to-l md:bg-gradient-to-r">
+      <Hero />
     </div>
   );
 }

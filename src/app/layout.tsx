@@ -5,7 +5,8 @@ import { Providers } from "./providers";
 import { metaDataLinks } from "@/config/MetaData";
 import { keywords } from "@/config/Keywords";
 import { metaDataTitle } from "@/config/MetaData";
-import FooterComponent from "@/components/footer/Footer";
+
+export const revalidate = 0;
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,7 +63,6 @@ export default function RootLayout({
               <div>{children}</div>
             </Providers>
           </div>
-          <FooterComponent />
         </div>
       </body>
     </html>
