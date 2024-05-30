@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import { metaDataLinks } from "@/config/MetaData";
 import { keywords } from "@/config/Keywords";
 import { metaDataTitle } from "@/config/MetaData";
+import Header from "@/components/header/Header";
 
 export const revalidate = 0;
 

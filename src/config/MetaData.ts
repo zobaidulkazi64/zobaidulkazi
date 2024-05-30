@@ -17,10 +17,10 @@ export const metaDataTitle = {
 };
 
 export const MetaDataSocial = {
-  twitter: "https://twitter.com/zobaidulkazi",
-  facebook: "https://facebook.com/zobaidulkazi64",
+  twitter: "https://x.com/zobaidulkazi",
+  facebook: "https://facebook.com/zobaidulkazi",
   linkedin: "https://linkedin.com/in/zobaidulkazi",
   instagram: "https://instagram.com/zobaidulkazi",
-  github: "https://github.com/zobaidulkazi64",
+  github: "https://github.com/zobkazi",
 };
 
