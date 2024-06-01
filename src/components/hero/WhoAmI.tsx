@@ -8,7 +8,7 @@ const WhoAmI = () => {
         <span className="text-sm font-semibold text-indigo-600">
           Who am I?{" "}
         </span>
-        <Link href="/" className="font-semibold text-indigo-600">
+        <Link href="/about" className="font-semibold text-indigo-600">
           <span className="absolute inset-0" aria-hidden="true" />
           Read more <span aria-hidden="true">&rarr;</span>
         </Link>
