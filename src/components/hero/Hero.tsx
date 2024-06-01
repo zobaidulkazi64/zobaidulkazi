@@ -7,7 +7,7 @@ import BottomBg from "./BottomBg";
 
 const Hero: React.FC = () => {
   return (
-    <div className="bg-white fixed inset-0 dark:bg-black">
+    <div className="bg-white inset-0 dark:bg-black">
       <div className="relative isolate px-2  lg:px-2 h-screen">
         {/* TopBg */}
         <TopBg />
@@ -33,16 +33,6 @@ const Hero: React.FC = () => {
                 name="Github"
                 link="https://github.com/zobkazi"
                 className="w-full sm:w-auto bg-black text-white dark:bg-white dark:text-black"
-              />
-              <Button
-                name="LinkedIn"
-                link="https://www.linkedin.com/in/zobaidulkazi"
-                className="w-full sm:w-auto"
-              />
-              <Button
-                name="LinkedIn"
-                link="https://www.linkedin.com/in/zobaidulkazi"
-                className="w-full sm:w-auto"
               />
             </div>
           </div>
