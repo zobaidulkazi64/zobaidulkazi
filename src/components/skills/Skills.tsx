@@ -1,38 +1,46 @@
-'use client';
-import { useEffect, useState } from "react";
+// components/Skills.tsx
+import React from "react";
+import { Snippet } from "@nextui-org/react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Divider,
+  Link,
+  Image,
+} from "@nextui-org/react";
 
-interface Skill {
-  id: number;
+// Define the type for the skills data
+type Skill = {
   name: string;
   level: string;
-}
+};
 
-const Skills = () => {
-  const [skills, setSkills] = useState<Skill[]>([]);
+// Sample data for skills
+const skillsData: Skill[] = [
+  { name: "JavaScript", level: "Advanced" },
+  { name: "TypeScript", level: "Intermediate" },
+  { name: "React", level: "Advanced" },
+  { name: "Next.js", level: "Intermediate" },
+];
 
-  useEffect(() => {
-    const fetchSkills = async () => {
-      const response = await fetch("/skills.json");
-      const data = await response.json();
-      setSkills(data);
-    };
-
-    fetchSkills();
-  }, []);
-
+const Skills: React.FC = () => {
   return (
-    <div className="p-6 bg-gray-100 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4">Skills</h2>
-      <ul>
-        {skills.map((skill) => (
-          <li key={skill.id} className="mb-2">
-            <div className="flex justify-between items-center bg-white p-4 rounded-md shadow-sm">
-              <span className="text-lg font-medium">{skill.name}</span>
-              <span className="text-sm text-gray-500">{skill.level}</span>
-            </div>
-          </li>
-        ))}
-      </ul>
+    <div>
+      <Card>
+        <CardHeader>
+          <h2 className="text-2xl font-bold">My Skills</h2>
+        </CardHeader>
+        <Divider />
+        <CardBody>
+          {skillsData.map((skill, index) => (
+            <Snippet key={index} className="text-white text-3xl font-bold">
+              {skill.name}: {skill.level}
+            </Snippet>
+          ))}
+        </CardBody>
+      </Card>
     </div>
   );
 };
