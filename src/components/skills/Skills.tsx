@@ -1,4 +1,5 @@
 import React from "react";
+import WhoAmI from "../hero/WhoAmI";
 
 const Skills = () => {
   return (
@@ -8,7 +9,7 @@ const Skills = () => {
 
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
 */}
-      <section className="relative bg-[url(/images/skills-bg.jpg)] bg-cover bg-center bg-no-repeat">
+      <section className="relative bg-[url(https://github.com/zobkazi/zobaidulkazi/blob/main/public/assets/images/zobaidulkazi-hero-bg.png?raw=true)] bg-cover bg-center bg-no-repeat  ">
         <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
 
         <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
@@ -20,7 +21,6 @@ const Skills = () => {
                 Forever Home.{" "}
               </strong>
             </h1>
-
             <p className="mt-4 max-w-lg sm:text-xl/relaxed">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
               illo tenetur fuga ducimus numquam ea!
@@ -44,7 +44,13 @@ const Skills = () => {
           </div>
         </div>
       </section>
-      ;
+
+      <img
+        alt="zobaidulkazi-hero.png"
+        src="https://github.com/zobkazi/zobaidulkazi/blob/main/public/assets/images/zobaidulkazi-hero.png?raw=true"
+        data-hpc="true"
+        className="Box-sc-g0xbh4-0 kzRgrI"
+      ></img>
     </div>
   );
 };

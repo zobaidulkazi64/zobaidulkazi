@@ -7,7 +7,8 @@ const nextConfig = {
                 hostname: "github.com",
             },
         ]
-    }
+    },
+    
 };
 
 export default nextConfig;

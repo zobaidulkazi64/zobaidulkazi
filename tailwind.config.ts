@@ -10,7 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: (theme) => ({}),
+      buur: {
+        "3xl": "2000px",
+      },
     },
   },
   darkMode: "class",
