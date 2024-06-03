@@ -57,7 +57,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <div>
-          <div>
+          <div className="bg-stone-600 dark:bg-slate-900">
             <div>{children}</div>
           </div>
         </div>
