@@ -1,56 +1,45 @@
+import BackgroundImageComponent from "@/app/skills/page";
 import React from "react";
-import WhoAmI from "../hero/WhoAmI";
 
 const Skills = () => {
   return (
     <div>
-      {/*
-  Heads up! 👋
-
-  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-*/}
-      <section className="relative bg-[url(https://github.com/zobkazi/zobaidulkazi/blob/main/public/assets/images/zobaidulkazi-hero-bg.png?raw=true)] bg-cover bg-center bg-no-repeat  ">
-        <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
-
-        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Let us find your
-              <strong className="block font-extrabold text-rose-700">
-                {" "}
-                Forever Home.{" "}
-              </strong>
+      <section>
+        <div className="max-w-screen-xl mx-auto px-4 py-28 gap-12 text-gray-600 md:px-8">
+          <div className="space-y-5 max-w-4xl mx-auto text-center">
+            <h1 className="text-sm text-indigo-600 font-medium">
+              Build products for everyone
             </h1>
-            <p className="mt-4 max-w-lg sm:text-xl/relaxed">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-              illo tenetur fuga ducimus numquam ea!
+            <h2 className="text-4xl text-gray-800 font-extrabold mx-auto md:text-5xl">
+              Design your projects faster with{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#E114E5]">
+                the largest figma UI kit
+              </span>
+            </h2>
+            <p className="max-w-2xl mx-auto">
+              Sed ut perspiciatis unde omnis iste natus voluptatem accusantium
+              doloremque laudantium, totam rem aperiam, eaque ipsa quae.
             </p>
-
-            <div className="mt-8 flex flex-wrap gap-4 text-center">
+            <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
               <a
-                href="#"
-                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                href="javascript:void(0)"
+                className="block py-2 px-4 text-white font-medium bg-indigo-600 duration-150 hover:bg-indigo-500 active:bg-indigo-700 rounded-lg shadow-lg hover:shadow-none"
               >
-                Get Started
+                Browse courses
               </a>
-
               <a
-                href="#"
-                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                href="javascript:void(0)"
+                className="block py-2 px-4 text-gray-700 hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg"
               >
-                Learn More
+                Get access
               </a>
             </div>
           </div>
+          <div className="mt-14">
+            <BackgroundImageComponent />
+          </div>
         </div>
       </section>
-
-      <img
-        alt="zobaidulkazi-hero.png"
-        src="https://github.com/zobkazi/zobaidulkazi/blob/main/public/assets/images/zobaidulkazi-hero.png?raw=true"
-        data-hpc="true"
-        className="Box-sc-g0xbh4-0 kzRgrI"
-      ></img>
     </div>
   );
 };
