@@ -1,6 +1,10 @@
 "use client";
 import { useState, useEffect } from "react";
 import { HomePageData } from "@/config/HomePageData";
+import Button from "../ui/Button";
+import GetStarted from "../ui/GetStarted";
+import Link from "next/link";
+import Brand from "../brand/Brand";
 
 const Hero = () => {
   const [state, setState] = useState(false);
@@ -22,55 +26,6 @@ const Hero = () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
-
-  const Brand = () => (
-    <div className="flex items-center justify-between py-5 md:block">
-      <a href="#">
-        <img
-          src="https://www.floatui.com/logo-dark.svg"
-          width={120}
-          height={50}
-          alt="Float UI logo"
-        />
-      </a>
-      <div className="md:hidden">
-        <button
-          className="menu-btn text-gray-400 hover:text-gray-300"
-          onClick={() => setState(!state)}
-        >
-          {state ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-              />
-            </svg>
-          )}
-        </button>
-      </div>
-    </div>
-  );
 
   return (
     <div>
@@ -96,30 +51,13 @@ const Hero = () => {
                 <ul className="flex-1 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0">
                   {navigation.map((item, idx) => (
                     <li key={idx} className="text-gray-300 hover:text-gray-400">
-                      <a href={item.path} className="block">
+                      <Link href={item.path} className="block">
                         {item.title}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                   <li>
-                    <a
-                      href="#"
-                      className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-full md:inline-flex"
-                    >
-                      Get started
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        className="w-5 h-5"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </a>
+                    <GetStarted />
                   </li>
                 </ul>
               </div>
@@ -144,21 +82,7 @@ const Hero = () => {
                   placeholder="Enter your email"
                   className="w-full px-3 py-2.5 text-gray-400 bg-gray-700 focus:bg-gray-900 duration-150 outline-none rounded-lg shadow sm:max-w-sm sm:w-auto"
                 />
-                <button className="flex items-center justify-center gap-x-2 py-2.5 px-4 mt-3 w-full text-sm text-white font-medium bg-sky-500 hover:bg-sky-400 active:bg-sky-600 duration-150 rounded-lg sm:mt-0 sm:w-auto">
-                  Contacts Me
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </button>
+                <Button />
               </form>
             </div>
             <p>is a full-stack developer</p>
