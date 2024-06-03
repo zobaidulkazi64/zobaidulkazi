@@ -2,41 +2,37 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <>
-      <section className="relative h-svh z-10 bg-gradient-to-b from-yellow-200 to-red-900 py-[120px]">
-        <div className="container mx-auto">
-          <div className="-mx-4 flex">
-            <div className="w-full px-4">
-              <div className="mx-auto max-w-[400px] text-center">
-                <h2 className="mb-2 text-[50px] font-bold leading-none text-white sm:text-[80px] md:text-[100px]">
-                  404
-                </h2>
-                <h4 className="mb-3 text-[22px] font-semibold leading-tight text-white">
-                  Oops! That page can’t be found
-                </h4>
-                <p className="mb-8 text-lg text-white">
-                  The page you are looking for may have been deleted.
-                </p>
-                <Link href="/">
-                  <p className="inline-block rounded-lg border border-white bg-white px-8 py-3 text-center text-base font-semibold text-black transition hover:bg-black hover:text-white">
-                    Go To Home
-                  </p>
-                </Link>
-              </div>
-            </div>
-          </div>
+    <main>
+      <div className="max-w-screen-xl mx-auto px-4 flex items-center justify-start h-screen md:px-8">
+        <div className="max-w-lg mx-auto space-y-3 text-center">
+          <h3 className="text-gray-800 text-4xl font-semibold sm:text-5xl">
+            Page not found
+          </h3>
+          <p className="text-gray-600">
+            Sorry, the page you are looking for could not be found or has been
+            removed.
+          </p>
+          <a
+            href="javascript:void(0)"
+            className="text-indigo-600 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1"
+          >
+            Go back
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="w-5 h-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </a>
         </div>
-
-        <div className="absolute left-0 top-0 -z-10 flex h-full w-full items-center justify-between space-x-5 md:space-x-8 lg:space-x-14">
-          <div className="h-full w-1/3 bg-gradient-to-t from-[#FFFFFF14] to-[#C4C4C400]"></div>
-          <div className="flex h-full w-1/3">
-            <div className="h-full w-1/2 bg-gradient-to-b from-[#FFFFFF14] to-[#C4C4C400]"></div>
-            <div className="h-full w-1/2 bg-gradient-to-t from-[#FFFFFF14] to-[#C4C4C400]"></div>
-          </div>
-          <div className="h-full w-1/3 bg-gradient-to-b from-[#FFFFFF14] to-[#C4C4C400]"></div>
-        </div>
-      </section>
-    </>
+      </div>
+    </main>
   );
 };
 

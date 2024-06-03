@@ -1,21 +1,35 @@
 import type { Config } from "tailwindcss";
-import { nextui } from "@nextui-org/react";
-import HeroImages from "../../assets/images/zobaidulkazi.png";
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
-    extend: {
-      buur: {
-        "3xl": "2000px",
-      },
+    screens: {
+      sm: "360px",
+      md: "800px",
+      lg: "1024px",
+      xl: "1440px",
     },
   },
-  darkMode: "class",
-  plugins: [nextui()],
+  fontFamily: {
+    sans: ["Graphik", "sans-serif"],
+    serif: ["Merriweather", "serif"],
+  },
+
+  extend: {
+    spacing: {
+      "128": "32rem",
+      "144": "36rem",
+    },
+    borderRadius: {
+      "4xl": "2rem",
+    },
+  },
+
+  darkMode: "media",
+  plugins: [],
 };
 export default config;

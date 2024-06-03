@@ -1,31 +1,40 @@
-import Image from "next/image";
-import Link from "next/link";
-import { ThemeSwitcher } from "../themes/ThemeSwitcher";
+// components/Header.tsx
+"use client";
+import React, { useState, useEffect } from "react";
+import Brand from "@/components/brand/Brand";
+import Navigation from "@/components/navigation/Navigation";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigation = [
+    { title: "Features", path: "#" },
+    { title: "Integrations", path: "#" },
+    { title: "Customers", path: "#" },
+    { title: "Pricing", path: "#" },
+  ];
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      if (!target.closest(".menu-btn")) setIsMenuOpen(false);
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <div>
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav
-          className="flex items-center justify-between p-6 lg:px-8"
-          aria-label="Global"
-        >
-          <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5">
-              <span className="sr-only">zobaidulkazi</span>
-              <Image
-                width={100}
-                height={100}
-                className="h-8 w-auto rounded-sm"
-                src="https://github.com/zobkazi/zobaidulkazi/blob/main/public/assets/images/zobaidulkazi-logos.jpg?raw=true"
-                alt="zobaidulkazi-logos.jpg"
-              />
-            </Link>
-          </div>
-          <ThemeSwitcher />
-        </nav>
-      </header>
-    </div>
+    <header>
+      <div className={`md:hidden ${isMenuOpen ? "mx-2 pb-5" : "hidden"}`}>
+        <Brand isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      </div>
+      <Navigation navigation={navigation} state={isMenuOpen} />
+    </header>
   );
 };
 

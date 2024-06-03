@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Providers } from "./providers";
 import { metaDataLinks } from "@/config/MetaData";
 import { keywords } from "@/config/Keywords";
 import { metaDataTitle } from "@/config/MetaData";
-import Header from "@/components/header/Header";
 
 export const revalidate = 0;
 
@@ -60,9 +58,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div>
           <div>
-            <Providers>
-              <div>{children}</div>
-            </Providers>
+            <div>{children}</div>
           </div>
         </div>
       </body>
