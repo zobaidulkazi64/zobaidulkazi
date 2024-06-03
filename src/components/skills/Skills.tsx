@@ -1,50 +1,50 @@
-// components/Skills.tsx
 import React from "react";
-import Skill from "./Skill";
 
-const Skills: React.FC = () => {
+const Skills = () => {
   return (
-    <div className="skills p-6">
-      <h2 className="text-2xl font-bold mb-4">
-        I have experience with these technologies
-      </h2>
-      <div className="skillsGrid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-          alt="The logo icon for React"
-          title="React"
-        />
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-          alt="The logo icon for HTML 5"
-          title="HTML 5"
-        />
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-          alt="The logo icon for CSS3"
-          title="CSS 3"
-        />
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
-          alt="The logo icon for TailwindCSS"
-          title="Tailwind CSS"
-        />
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg"
-          alt="The logo icon for GitHub"
-          title="GitHub"
-        />
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
-          alt="The logo icon for NPM"
-          title="NPM"
-        />
-        <Skill
-          source="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-          alt="The logo icon for NodeJS"
-          title="Node JS"
-        />
-      </div>
+    <div>
+      {/*
+  Heads up! 👋
+
+  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+*/}
+      <section className="relative bg-[url(/images/skills-bg.jpg)] bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l"></div>
+
+        <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
+          <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h1 className="text-3xl font-extrabold sm:text-5xl">
+              Let us find your
+              <strong className="block font-extrabold text-rose-700">
+                {" "}
+                Forever Home.{" "}
+              </strong>
+            </h1>
+
+            <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+              illo tenetur fuga ducimus numquam ea!
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4 text-center">
+              <a
+                href="#"
+                className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+              >
+                Get Started
+              </a>
+
+              <a
+                href="#"
+                className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      ;
     </div>
   );
 };
