@@ -12,8 +12,8 @@ const NotFound = () => {
             Sorry, the page you are looking for could not be found or has been
             removed.
           </p>
-          <a
-            href="javascript:void(0)"
+          <Link
+            href='/'
             className="text-indigo-600 duration-150 hover:text-indigo-400 font-medium inline-flex items-center gap-x-1"
           >
             Go back
@@ -29,7 +29,7 @@ const NotFound = () => {
                 clipRule="evenodd"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
     </main>
