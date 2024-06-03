@@ -10,27 +10,13 @@ const Hero = () => {
     <div>
       <div className="h-svh">
         <Header />
-
         <section className="relative">
           <div className="relative z-10 max-w-screen-xl mx-auto px-4 py-28 md:px-8">
             <div className="space-y-5 max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl text-white font-extrabold mx-auto md:text-5xl">
+              <h2 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl">
                 {HomePageData.title}
               </h2>
-              <p className="max-w-2xl mx-auto text-gray-400">
-                {HomePageData.description}
-              </p>
-              <form
-                onSubmit={(e) => e.preventDefault()}
-                className="justify-center items-center gap-x-3 sm:flex"
-              >
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  className="w-full px-3 py-2.5 text-gray-400 bg-gray-700 focus:bg-gray-900 duration-150 outline-none rounded-lg shadow sm:max-w-sm sm:w-auto"
-                />
-                <Button />
-              </form>
+              <p className="text-gray-300">{HomePageData.description}</p>
             </div>
           </div>
           <div
